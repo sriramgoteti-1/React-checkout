@@ -1,0 +1,63 @@
+Event Game Booking 
+
+Brief Expalnation
+—------------------
+Game or activity book for events like birthday party . User will signup/login and go through the game add the game/games into cart once that is done user can go into checkout page and make enquiry . 
+**No need to implement payment gate way but need to collect if user going to pay using UPI, cash, online or chaque as payment method. Also need to show distance and transport charge below so that user can see them before making enquiry.
+
+User PANEL
+—--------------------
+lOGIN & SIGNUP 
+Game list (GAME NAME: Hi Stricker, Puch Challange, Bow & Arrow, Catch Fish)
+Add Game in cart
+Checkout page 
+Checkout page fields
+—---------
+Event Start date and time 
+Event End date and time 
+Setup date and time 
+Location where event will be held (dropdown options provided below as user options under event location)
+Payment method 
+Transport charge
+Distance of user selected location  (total distance need to show)
+Make enquiry button
+
+
+**Condition 
+Event end date and time should not be before setup date and time (Ex: event start date is on 25.12.2022 12pm event end date can not be before 25.12.2022 2pm or 26.12.2022) 
+Setup date and time should not be after event date (Ex: event start date is on 25.12.2022 12pm setup date time can not be 25.12.2022 after 10am or 26.12.2022) 
+Setup date can not be more than 1 day before event (Ex: event start date is on 25.12.2022 event start date can not be 23.12.2022) 
+In checkout page somewhere it should show how many days/ hours the event is goin on based on the event start and end date
+Transport charge calculation logic For 30km charge will be 1500rs and after that for each km 50rs (Example : User selected Baghajatin, Kolkata, WB distance is 10km that means for upward and downward it will be 20km so the charge will be 1500rs . But if user selected Garia, Kolkata, WB distance for one way is 20km that means upward and downward will be 40km  which is more that 30km in this case price will be for first 30km 1500rs for next 10km it will be 10 * 50 = 500rs so total 2000rs)
+
+
+
+Event Location 
+—-----------------------
+	**Distance is provided for only one way journey 
+
+User Options
+—------------------------------
+[{
+Id: 1
+name: Baghajatin, Kolkata, WB
+Distance: 10km
+},
+{
+Id: 2
+name: Garia, Kolkata, WB
+Distance: 20km
+}
+,
+{
+Id: 3
+Name: Sealdaha, Kolkata, WB
+Distance: 15km
+},
+
+{
+Id: 4
+name: Jadavpur, Kolkata, WB
+Distance: 25km
+}
+]

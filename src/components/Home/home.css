@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.homepage-section{
+    height: calc(100vh - 64px);
+    text-align: center;
+}
+/* .home-heading{
+    color: #4689be;
+} */
+.cartItemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.cartItem {
+    width: 150px;
+    text-align: left;
+}

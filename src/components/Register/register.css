@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    margin: auto;
+    width: 200px;
+    margin-top: 100px;
+}
+.register-title{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.cutomError{
+    color: red;
+}
