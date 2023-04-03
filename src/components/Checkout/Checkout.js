@@ -93,49 +93,33 @@ export default function Checkout() {
   return (
     <>
       <div className="home-navbar">
-        <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static">
-            <Toolbar>
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-                // onClick={handleDashboard}
-              >
-                {["left"].map((anchor) => (
-                  <React.Fragment key={"left"}>
-                    <MenuIcon onClick={toggleDrawer(anchor, true)} />
-
-                    <Drawer
-                      anchor={"left"}
-                      open={state[anchor]}
-                      onClose={toggleDrawer(anchor, false)}
-                    >
-                      {/* {list(anchor)} */}
-                    </Drawer>
-                  </React.Fragment>
-                ))}
-              </IconButton>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 0.45 }}>
-                Cart Page
-              </Typography>
-              <div>
-                <a href="/home">HOME</a>
-              </div>
-              <Button
-                sx={{ flexGrow: 0.5, justifyContent: "end" }}
-                color="inherit"
-                onClick={handleLogout}
-              >
-                Logout
-              </Button>
-            </Toolbar>
-          </AppBar>
-        </Box>
+      <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Cart Page
+          </Typography>
+          <Button color="inherit" onClick={handleLogout}>Logout</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
       </div>
-
+      <div className="checkout-wrapper">
+      <div className="checkout-heading">
+      <div className="item-heading">Item</div>
+      <div className="distance-heading">Distance</div>
+      <div className="price-heading">Cost</div>
+      
+      </div>        
       {items.length > 0 ? (
         items.map((item, index) => (
           <div className="checkout-cont">
@@ -159,6 +143,7 @@ export default function Checkout() {
           </div>
         ))
       ) : ("")}
+      </div>
       <div className="totalprice">
         <span>Total Price :{totalprice}/-</span>
       </div>

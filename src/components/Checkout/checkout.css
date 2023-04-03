@@ -2,9 +2,29 @@
     padding: 20px;
     flex: 0 0 70%;
 }
+.checkout-wrapper{
+    width: 500px;
+    box-shadow: 0px 0px 10px 0px rgba(217, 217, 217, 1);
+    margin: auto;
+}
 .checkout-cont {
     display: flex;
     align-items: center;
+}
+.checkout-heading {
+    display: flex;
+}
+.item-heading{
+    padding: 20px;  
+    flex: 0 0 70%;
+}
+.distance-heading{
+flex: 0 0 15%;
+padding-top: 20px;
+}
+.price-heading{
+flex: 0 0 15%;
+padding-top: 20px;  
 }
 .totalprice{
     text-align: center;
@@ -16,5 +36,8 @@
     text-align: end;
 }
 .distance-section {
-    flex: 0 0 10%;
+    flex: 0 0 15%;
+}
+.price-section {
+    flex: 0 0 15%;
 }

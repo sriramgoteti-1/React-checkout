@@ -10,13 +10,32 @@
 /* .home-heading{
     color: #4689be;
 } */
+.cartItem-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .cartItemContainer{
+    box-shadow: 0px 0px 10px 0px rgba(217, 217, 217, 1);
+    margin: 10px;
+}
+.dateSection:not(:last-child){
+    padding-right: 10px;
+}
+.dateWrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 10px;
 }
-.cartItem {
-    width: 150px;
-    text-align: left;
+/* MUI Styling */
+
+.inputMUI{
+    min-width: 0px !important;
+    overflow: hidden    ;
+}
+.inputMUI .MuiInputBase-root{
+    padding: 0px;
+}
+.inputMUI .MuiInputBase-input   {
+    padding: 0px;
 }
